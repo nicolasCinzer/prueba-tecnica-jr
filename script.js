@@ -21,7 +21,7 @@ const addMarkerFromForm = () => {
 };
 
 const addMarker = (description, address, phone, category, coord) => {
-  L.marker(coord)
+  const marker = L.marker(coord)
     .bindPopup(
       "<b>Descripción</b>: " +
         description +
@@ -32,9 +32,12 @@ const addMarker = (description, address, phone, category, coord) => {
         "</br><b>(X, Y)</b>: " +
         coord +
         "</br><b>Categoría</b>: " +
-        category
+        category +
+        "</br>" +
+        buttonRemove
     )
     .addTo(map);
+  marker.on("popupopen", removeMarker);
 };
 
 var popup = L.popup();
@@ -64,4 +67,14 @@ function addFromFile() {
     });
   });
   reader.readAsText(fileUpload.files[0]);
+}
+
+const buttonRemove = '<button type="button" class="remove">Borrar</button>';
+
+function removeMarker() {
+  const marker = this;
+  const btn = document.querySelector(".remove");
+  btn.addEventListener("click", function () {
+    map.removeLayer(marker);
+  });
 }
