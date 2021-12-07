@@ -10,19 +10,29 @@ let phone = document.getElementById("phone");
 let category = document.getElementById("category");
 let coord = document.getElementById("coord");
 
-const addMarker = () => {
-  L.marker(coord.value.split(","))
+const addMarkerFromForm = () => {
+  return addMarker(
+    description.value,
+    address.value,
+    phone.value,
+    category.value,
+    coord.value.split(",")
+  );
+};
+
+const addMarker = (description, address, phone, category, coord) => {
+  L.marker(coord)
     .bindPopup(
       "<b>Descripción</b>: " +
-        description.value +
+        description +
         "</br><b>Dirección</b>: " +
-        address.value +
+        address +
         "</br><b>Teléfono</b>: " +
-        phone.value +
+        phone +
         "</br><b>(X, Y)</b>: " +
-        coord.value.split(",") +
+        coord +
         "</br><b>Categoría</b>: " +
-        category.value
+        category
     )
     .addTo(map);
 };
@@ -37,3 +47,21 @@ function onMapClick(e) {
 }
 
 map.on("click", onMapClick);
+
+function addFromFile() {
+  var fileUpload = document.getElementById("files");
+  var reader = new FileReader();
+  reader.addEventListener("load", function () {
+    const result = JSON.parse(reader.result);
+    result.forEach((marker) => {
+      addMarker(
+        marker.description,
+        marker.address,
+        marker.phone,
+        marker.category,
+        marker.coord.split(",")
+      );
+    });
+  });
+  reader.readAsText(fileUpload.files[0]);
+}

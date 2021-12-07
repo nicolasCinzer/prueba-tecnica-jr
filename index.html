@@ -101,12 +101,25 @@
             class="button"
             id="add-button"
             value="Agregar"
-            onclick="addMarker()"
+            onclick="addMarkerFromForm()"
+          />
+        </div>
+      </div>
+      <div class="row sm-3">
+        <div class="col-sm-6">
+          <input type="file" id="files" />
+        </div>
+        <div class="col-sm-6">
+          <input
+            type="button"
+            class="button"
+            id="add-file-button"
+            value="Cargar archivo"
+            onclick="addFromFile()"
           />
         </div>
       </div>
     </div>
-
     <div id="map"></div>
     <script src="script.js"></script>
   </body>

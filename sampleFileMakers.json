@@ -1,0 +1,44 @@
+[
+  {
+    "description": "Aeroterra S.A.",
+    "address": "Av. E. Madero 1020",
+    "phone": "54 9 11 5334 5855",
+    "category": "Residencial",
+    "coord": "-34.5957735,-58.3731428"
+  },
+  {
+    "description": "Rapanui",
+    "address": "Uruguay 1284",
+    "phone": "54 9 11 5334 5855",
+    "category": "Comercial",
+    "coord": "-34.5963209,-58.387738"
+  },
+  {
+    "description": "Sanatorio de la Trinidad Mitre",
+    "address": "Bartolomé Mitre 2553",
+    "phone": "54 9 11 5334 5855",
+    "category": "Residencial",
+    "coord": "-34.6096491,-58.4034867"
+  },
+  {
+    "description": "Gallo Negro",
+    "address": "Donado 1851",
+    "phone": "54 9 11 5334 5855",
+    "category": "Comercil",
+    "coord": "34.5748777,-58.4750768"
+  },
+  {
+    "description": "Devoto Shopping",
+    "address": "Quevedo 3365",
+    "phone": "54 9 11 5334 5855",
+    "category": "Mixta",
+    "coord": "-34.6070007,-58.5362103"
+  },
+  {
+    "description": "Universidad Nacional de Lomas de Zamora",
+    "address": "Av. Juan XXIII",
+    "phone": "54 9 11 5334 5855",
+    "category": "Mixta",
+    "coord": "-34.7717169,-58.4711441"
+  }
+]
