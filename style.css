@@ -27,7 +27,7 @@
 
 .button {
   width: 100%;
-  margin-top: 10px;
+  margin: 10px 0px;
   padding: 5px;
   color: #fff;
   background-color: green;
@@ -44,4 +44,16 @@
   padding: 5px;
   cursor: pointer;
   background-color: #fff;
+}
+
+#files {
+  position: relative;
+  top: 20px;
+}
+
+#info-top,
+#info-bottom {
+  font-size: 1em;
+  position: relative;
+  top: 10px;
 }
