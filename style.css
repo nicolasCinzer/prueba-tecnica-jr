@@ -7,6 +7,7 @@
   background-color: #d4d3d3;
   padding: 10px 20px;
   border: 1px solid #686767;
+  font-size: 15px;
 }
 
 #title {
@@ -31,4 +32,15 @@
   background-color: green;
   border-radius: 3px;
   border: 1px solid rgb(0, 82, 0);
+}
+
+.select {
+  width: 100%;
+  height: 80%;
+  margin-top: 10px;
+  border-radius: 3px;
+  border: 1px solid #686767;
+  padding: 5px;
+  cursor: pointer;
+  background-color: #fff;
 }
