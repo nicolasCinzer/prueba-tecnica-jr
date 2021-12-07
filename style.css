@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+.searcher {
+  width: 100%;
+  background-color: #d4d3d3;
+  padding: 10px 20px;
+  border: 1px solid #686767;
+}
+
+#title {
+  font-size: 1.5em;
+  color: #8a8888;
+  text-shadow: 1px 1px #686767;
+}
+
+.control {
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #686767;
+  margin-top: 10px;
+}
+
+.button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+  color: #fff;
+  background-color: green;
+  border-radius: 3px;
+  border: 1px solid rgb(0, 82, 0);
+}
